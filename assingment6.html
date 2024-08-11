@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANTIC HTML </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #3d0423;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li{
+            display: flex;
+            margin: 0 10px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        
+        
+        form {
+            margin-top: 20px;
+        }
+        form label, form input, form textarea, form button {
+            display: block;
+            margin: 10px 0;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>DEMO PHOTOGRAPHY STUDIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="all-browsers">
+            <h1>Most Popular photographs</h1>
+            <img src="picture.jpg" alt="fireworks" width="300" height="200">
+            <img src="rengoku.jpg" alt="Anime" width="300" height="200">
+            <img src="wallpaper.jpg" alt="editing" width="300" height="200">
+            <article id="home">
+              <h2>Welcome to the most popular studio!</h2>
+              <p>Studio photography is performed indoors in a managed setting where the photographer has total control over all elements that go into creating a photograph. This workshop covers every aspect of creating the perfect photo in the studio, including setting up the ideal lighting scheme.</p>
+            </article>
+            <article id="about">
+              <h2>About Us</h2>
+              <p>The short and practical definition of an art studio is a place where the artist works and creates.</p>
+              <p>You can hire photograhers,editors from our websites.For contacting us fill the form below and our company will reach out to you.</p>
+            </article>
+            <article id="contact">
+                <h2>Contact Us</h2>
+                <form action="/submit-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" ></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+          </article>
+        
+
+        <aside>
+            <h2>List of related links..</h2>
+            <ul><li>
+            <a href="https://www.lipsum.com/">dummy link </a></li>
+            <li><a href="https://loremipsum.io/"> this is also dummy link</a></li></ul>
+        </aside>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DEMO PHOTOGRAPHY STUDIO ! All rights reserved </p>
+        <p>Visit Us: 123 xyz street Mumbai</p>
+        <p>Follow us on social Media:</p>
+        <nav>
+            <ul>
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
